@@ -1,0 +1,12 @@
+.container{
+    display: flex;
+}
+.form__column{
+    flex: 1;
+}
+.form__column:nth-child(1){
+    background-color: #1ac073;
+}
+.form__header{
+    text-align: center;
+}
