@@ -45,3 +45,8 @@ button{
 	outline: none;
 	border: none;
 }
+input{
+	outline: none;
+	border: none;
+	box-sizing: border-box;
+}
