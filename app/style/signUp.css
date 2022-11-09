@@ -1,5 +1,10 @@
+body,html{
+    margin: 0;
+    padding: 0;
+}
 .container{
     display: flex;
+    height: 100vh;
 }
 .form__column{
     flex: 1;
@@ -9,4 +14,77 @@
 }
 .form__header{
     text-align: center;
+    width: 100%;
+    margin-top: 45px;
+}
+.form__header img{
+    width: 35%;
+}
+.form__img{
+    text-align: center;
+    width: 100%;
+}
+.form__img img{
+    width: 70%;
+    height: 80%;  
+}
+.form__column:nth-child(2){
+    margin: 35px 60px;
+    padding: 0;
+}
+.form__heading{
+    text-align: center;
+    color: #1ac073;
+}
+.form__info{
+    width: 100%;
+}
+.form__info input{
+    width: calc(100% - 12px);
+    margin: 5px 0;
+    padding: 7px 0 7px 10px;
+    border: 1px solid #929292;
+    border-radius: 3px;
+}
+.form__info input:invalid{
+    border: 1.5px solid red;
+}
+/* .form__info input{
+    border: 1.5px solid #1ac073;
+} */
+.form__info label{
+    display: block;
+    margin: 5px 0;
+}
+.form__footer{
+    margin-top: 0px;
+    color: #929292;
+    font-size: 13px;
+}
+
+.btn__logIn{
+    background-color: #1ac073;
+    display: block;
+    border: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    height: 30px;
+    margin: 10px 0;
+    border-radius: 10px;
+    padding: 6px 0;
+    font-size: 16px;
+}
+.margin--top0{
+    margin-top: 0;
+
+}
+.margin--bottom0{
+    margin-bottom: 0;
+}
+.text--center{
+    text-align: center;
+}
+.text--green{
+    color: #1ac073;
 }
