@@ -1,0 +1,57 @@
+:root{
+    --primary-color:rgb(26, 192, 115);
+    --primary-color-overlay:rgba(26, 192, 115,0.12);
+    --secondary-color:rgb(243, 186, 0);
+    --color-hover:rgba(243, 186, 0,0.4);
+    --background-color-light:#ffffff;
+    --pd-container:100px;
+    --heading-size-medium: 2.6rem;
+    --heading-size-lg: 7rem
+    --content-size-medium: 2.5rem;
+    --content-size-normal:14px;
+   
+}
+body,html {
+font-size:62.5%;
+font-family: roboto,sans-serif;
+box-sizing: border-box;
+}
+input{
+    box-sizing: border-box;
+}
+/* Custom Input, select */
+select{
+    outline:none; 
+    font-size:var(--content-size-normal);
+    border: 1px solid #5A5B6A;
+    border-radius: 4px; 
+    padding: 12px 6px;
+    color: #787885;
+}
+.input-label{
+    position:absolute;
+    background-color: var(--background-color-light);
+    top: -20%;
+    left: 12px;
+    font-size:var(--content-size-normal);
+    padding:0 3px;
+    text-transform:uppercase;
+}
+.container{
+/* padding: 0 100px; */
+font-size: 1.8rem;
+}
+#header{
+    padding: 10px var(--pd-container);
+    height: 50px;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    font-size:1.8rem;
+}
+.header__menu-list, .header__action{
+    display: flex;
+}
+.menu-list__item:not(:first-child), .header__signin{
+    margin-left:20px;
+}
