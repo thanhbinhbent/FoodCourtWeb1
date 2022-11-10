@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- font google start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&family=Rufina:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font google end -->
     <link
       rel="stylesheet"
       href="https://cdn-uicons.flaticon.com/uicons-thin-rounded/css/uicons-thin-rounded.css"
@@ -17,6 +25,303 @@
       rel="stylesheet"
       href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./app/style/home.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <header class="header-container header__bg">
+        <div id="header">
+          <div class="header__logo">
+            <img src="./assets/img/logo-ngang.png" alt="" />
+          </div>
+          <ul class="header__menu-list">
+            <li class="menu-list__item">
+              <span class="menu-list__text">Home</span>
+              <span></span>
+            </li>
+            <li class="menu-list__item" href="#">
+              <span class="menu-list__text">Our brand</span>
+            </li>
+            <li class="menu-list__item">
+              <span class="menu-list__text">Menu</span>
+              <img
+                class="menu-list__gif"
+                src="./assets/img/orders-now.gif"
+                alt=""
+              />
+            </li>
+            <li class="menu-list__item">
+              <span class="menu-list__text">Others</span>
+              <span><i class="fa-solid fa-angle-down"></i> </span>
+            </li>
+          </ul>
+          <div class="header__action">
+            <div class="header__cart">
+              <img src="./assets/icon/cart.png" alt="" />
+              <span class="header__cart--num">99+</span>
+            </div>
+            <div class="header__signin">
+              <i class="fa-solid fa-arrow-right-to-bracket"></i
+              ><span>Signin</span>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="home-page--first">
+        <div class="page-col">
+          <h1 class="page-intro__heading">The best food court ever !</h1>
+          <p class="page-intro__desc">Driveaway your hunger pangs.</p>
+          <form class="page-search__group">
+            <div class="page-search__input">
+              <input
+                type="text"
+                class=""
+                placeholder="Search food you love..."
+                name="search"
+              />
+              <button type="submit">Search</button>
+            </div>
+          </form>
+        </div>
+        <div class="page-col">
+          <img src="./assets/img/Home/home-illustration-chef.png" alt="" />
+        </div>
+      </div>
+      <div class="home-section__2nd">
+        <div class="section-heading">
+          <img src="./assets/icon/icon-restaurant2.png" alt="" />
+          <h2>OUR BRAND</h2>
+        </div>
+        <div class="foodcourt__container">
+          <div class="foodcourt__filter">
+            <label for="home-select__foodcourt " class="input-label"
+              >Sort by:</label
+            >
+            <select name="home-select__foodcourt" id="home-select__foodcourt">
+              <option value="Type of food" default selected disabled>
+                Type of food
+              </option>
+              <option value="Dairy">Dairy</option>
+              <option value="Starchy">Starchy</option>
+              <option value="Protein">Protein</option>
+              <option value="Vegetarian">Vegetarian</option>
+            </select>
+          </div>
+          <ul class="foodcourt__list">
+            <li class="foodcourt__item">
+              <div class="foodcourt__content">
+                <span class="foodcourt__name">Lorem ipsum dolor</span>
+                <div class="foodcourt__time">
+                  <i></i>
+                  <span class="foodcourt__time-text"> 08:00 AM - 10:00PM </span>
+                </div>
+                <button class="foodcourt__order">
+                  <span class="foodcourt__order-text">Order Now</span>
+                  <span class="foodcourt__order-icon">></span>
+                </button>
+              </div>
+            </li>
+            <li class="foodcourt__item">
+              <div class="foodcourt__content">
+                <span class="foodcourt__name">Lorem ipsum </span>
+                <div class="foodcourt__time">
+                  <i></i>
+                  <span class="foodcourt__time-text"> 08:00 AM - 10:00PM </span>
+                </div>
+                <button class="foodcourt__order">
+                  <span class="foodcourt__order-text">Order Now</span>
+                  <span class="foodcourt__order-icon">></span>
+                </button>
+              </div>
+            </li>
+            <li class="foodcourt__item">
+              <div class="foodcourt__content">
+                <span class="foodcourt__name">Lorem ipsum</span>
+                <div class="foodcourt__time">
+                  <i></i>
+                  <span class="foodcourt__time-text"> 08:00 AM - 10:00PM </span>
+                </div>
+                <button class="foodcourt__order">
+                  <span class="foodcourt__order-text">Order Now</span>
+                  <span class="foodcourt__order-icon">></span>
+                </button>
+              </div>
+            </li>
+            <li class="foodcourt__item">
+              <div class="foodcourt__content">
+                <span class="foodcourt__name">Lorem ipsum dolor </span>
+                <div class="foodcourt__time">
+                  <i></i>
+                  <span class="foodcourt__time-text"> 08:00 AM - 10:00PM </span>
+                </div>
+                <button class="foodcourt__order">
+                  <span class="foodcourt__order-text">Order Now</span>
+                  <span class="foodcourt__order-icon">></span>
+                </button>
+              </div>
+            </li>
+            <li class="foodcourt__item">
+              <div class="foodcourt__content">
+                <span class="foodcourt__name">Lorem ipsum</span>
+                <div class="foodcourt__time">
+                  <i></i>
+                  <span class="foodcourt__time-text"> 08:00 AM - 10:00PM </span>
+                </div>
+                <button class="foodcourt__order">
+                  <span class="foodcourt__order-text">Order Now</span>
+                  <span class="foodcourt__order-icon">></span>
+                </button>
+              </div>
+            </li>
+            <li class="foodcourt__item">
+              <div class="foodcourt__content">
+                <span class="foodcourt__name">Lorem ipsum</span>
+                <div class="foodcourt__time">
+                  <i></i>
+                  <span class="foodcourt__time-text"> 08:00 AM - 10:00PM </span>
+                </div>
+                <button class="foodcourt__order">
+                  <span class="foodcourt__order-text">Order Now</span>
+                  <span class="foodcourt__order-icon">></span>
+                </button>
+              </div>
+            </li>
+            <li class="foodcourt__item">
+              <div class="foodcourt__content">
+                <span class="foodcourt__name">Lorem ipsum dolor</span>
+                <div class="foodcourt__time">
+                  <i></i>
+                  <span class="foodcourt__time-text"> 08:00 AM - 10:00PM </span>
+                </div>
+                <button class="foodcourt__order">
+                  <span class="foodcourt__order-text">Order Now</span>
+                  <span class="foodcourt__order-icon">></span>
+                </button>
+              </div>
+            </li>
+            <li class="foodcourt__item">
+              <div class="foodcourt__content">
+                <span class="foodcourt__name">Lorem ipsum dolor </span>
+                <div class="foodcourt__time">
+                  <i></i>
+                  <span class="foodcourt__time-text"> 08:00 AM - 10:00PM </span>
+                </div>
+                <button class="foodcourt__order">
+                  <span class="foodcourt__order-text">Order Now</span>
+                  <span class="foodcourt__order-icon">></span>
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="home-section">
+        <div class="intro-video">
+          <div class="intro-video__content">
+            <h1 class="intro-video__heading">It looks delicious</h1>
+            <p class="intro-video__desc">Excellence taste in Every Bite.</p>
+            <span
+              ><i class="intro-video--play fa-regular fa-circle-play"></i
+            ></span>
+          </div>
+          <div class="intro-video__thumbnail">
+            <img src="./assets/img/Home/video-embed.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="home-section">
+        <div class="form-feedback">
+          <form action="" class="form-feedback__container">
+            <h3 class="form-feedback__heading">
+              Do you have a question or want to become a seller?
+            </h3>
+            <p class="form-feedback__desc">
+              Fill this form and our manager will contact you next 12 hours.
+            </p>
+            <div class="form-feedback__row">
+              <input
+                class="form-feedback__input"
+                type="text"
+                placeholder="Your name"
+              />
+              <input
+                class="form-feedback__input"
+                type="text"
+                placeholder="Your e-mail"
+              />
+            </div>
+            <div class="form-feedback__row">
+              <textarea
+                placeholder="Your message"
+                name=""
+                class="form-feedback__input form-feedback__content"
+                rows="10"
+              ></textarea>
+            </div>
+            <input type="submit" value="Submit" />
+          </form>
+          <div class="form-feeadback__img">
+            <img src="./assets/img/Home/letter.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div id="footer">
+        <div class="footer-col">
+          <div class="footer__logo">
+            <img src="./assets/img/logo-ngang.png" alt="" />
+          </div>
+          <div class="footer-item">
+            <span class="footer__icon">x</span
+            ><span class="footer__text"
+              >669 QL 1A, Khu Pho 3, Phuong Linh Xuan, Thu Duc, TP. HCM
+            </span>
+          </div>
+          <div class="footer-item">
+            <span class="footer-item__icon">x</span
+            ><span class="footer-item__text">08:00 AM - 10:00 PM </span>
+          </div>
+          <div class="footer-item">
+            <span class="footer-item__icon">x</span
+            ><span class="footer-item__text">(84) 0224323344 (Mr. John) </span>
+          </div>
+        </div>
+        <div class="footer-col">
+          <div class="footer-link">
+            <a class="footer-link__item" href="#">Company </a>
+            <a class="footer-link__item" href="#">Partner with us </a>
+            <a class="footer-link__item" href="#">FAQ </a>
+            <a class="footer-link__item" href="#">Blog </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <div class="footer-link">
+            <a class="footer-link__item" href="#">About us </a>
+            <a class="footer-link__item" href="#">Parner with us </a>
+            <a class="footer-link__item" href="#">Feature </a>
+            <a class="footer-link__item" href="#">News </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <div class="footer-link">
+            <a class="footer-link__item" href="#">Support </a>
+            <a class="footer-link__item" href="#">Account </a>
+            <a class="footer-link__item" href="#">Feedback </a>
+            <a class="footer-link__item" href="#">Categories </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <div class="footer-link">
+            <a class="footer-link__item" href="#">Get in touch </a>
+            <a class="footer-link__item" href="#">Question? </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
