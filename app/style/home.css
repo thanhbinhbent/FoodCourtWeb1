@@ -158,7 +158,7 @@ margin-top: 30px;
 }
 
 /* Play video section */
-.intro-video{height:100vh;position: relative;}
+.intro-video{height:100vh;position: relative;z-index: 0;}
 .intro-video__thumbnail{height:100%;position: relative;}
 .intro-video__thumbnail img{height:100%;
 width: 100%; object-fit: cover;}

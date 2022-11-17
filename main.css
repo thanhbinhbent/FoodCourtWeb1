@@ -46,10 +46,9 @@ font-size: 1.8rem;
 .header-container{
     position:fixed;
     width: 100%;
-    z-index: 1000;
-}
-.header__bg{
-    background-color: var(--primary-color-overlay);
+    z-index: 10;
+    background-color: #92E3A9;
+
 }
 #header{
     padding: 10px var(--pd-container);
