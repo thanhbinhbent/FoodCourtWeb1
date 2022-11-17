@@ -1,0 +1,112 @@
+body,html{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+}
+.form__column{
+    flex: 1;
+}
+.form__column:nth-child(1){
+    background-color: #1ac073;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form__header{
+    text-align: center;
+    width: 100%;
+}
+.form__header img{
+    width: 50%;
+    filter: contrast(0%) brightness(200%);
+}
+.form__img{
+    margin-top: 0px;
+    text-align: center;
+    width: 100%;
+}
+.form__img img{
+    width: 80%;
+    height: auto;  
+}
+.form__column:nth-child(2){
+    margin: 0px 60px 0 60px;
+    padding: 0;
+}
+.form__heading{
+    text-align: center;
+    color: #1ac073;
+    font-size: var(--heading-size-lg);
+    margin-bottom: 20px;
+}
+.form__info{
+
+    width: 100%;
+}
+.form__info input{
+    width: 100%;
+    margin: 5px 0;
+    padding: 7px 0 7px 10px;
+    border: 1.5px solid #929292;
+    border-radius: 5px;
+    font-size: var(--content-size-medium)
+}
+.form__info input[type="submit"], input[type="button"]{
+    width: 100%;
+}
+.form__info input:invalid{
+    border: 1.5px solid red;
+}
+.form__info input:focus{
+    border: 1.5px solid #1ac073;
+}
+.form__info label{
+    display: block;
+    margin: 5px 0;
+    font-size: var(--content-size-medium)
+}
+.form__footer{
+    margin-top: 0px;
+    color: #929292;
+    font-size: var(--content-size-normal);
+}
+.form__note{
+    margin-top: 0px;
+    font-size: var(--content-size-normal);
+    margin-bottom: 30px;
+}
+.btn__logIn{
+    background-color: #1ac073;
+    display: block;
+    border: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    height: 48px;
+    margin: 10px 0;
+    border-radius: 10px;
+    padding: 2px 0;
+    font-size: var(--content-size-medium);
+}
+.display--none{
+    display: none;
+}
+.margin--top0{
+    margin-top: 0;
+
+}
+.margin--bottom0{
+    margin-bottom: 0;
+}
+.text--center{
+    text-align: center;
+}
+.text--green{
+    color: #1ac073;
+}
