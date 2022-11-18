@@ -50,6 +50,11 @@ font-size: 1.8rem;
     background-color: #92E3A9;
 
 }
+.header__bg{
+    /* position: relative; */
+    z-index: 100;
+  
+}
 #header{
     padding: 10px var(--pd-container);
     height: 50px;
@@ -87,6 +92,9 @@ font-size: 1.8rem;
 }
 .header__signin i{
     margin-right: 10px;
+}
+.btn-signin{
+    color: #ffffff;
 }
 .header__action{
     align-items: center;
