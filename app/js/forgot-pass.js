@@ -1,8 +1,6 @@
-const btnSendCode = document.getElementById("sendcode")
-const btnVeriCode = document.getElementById("vericode")
+const btnSendCode = document.getElementById("send_code")
+const btnVeriCode = document.getElementById("veri_code")
 const classSendcode = document.getElementsByClassName("form__forgot")
-
-console.log(classSendcode)
 
 btnSendCode.addEventListener('click', () => {
     classSendcode[0].classList.remove("active")
