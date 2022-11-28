@@ -21,9 +21,17 @@ bottom: -3px;
     margin-left:7px;
     font-size: 1.6rem;
 }
+.container-body{
+    margin-top: var(--menu-height);
+    padding-left: var(--pd-container);
+    padding-right: var(--pd-container)  ;
+}
 .search-icon{
 font-size:2rem;
 }
 .search-icon.bx-x{
     color: var(--primary-color);
+}
+#breadcrumb{
+
 }
