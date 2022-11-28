@@ -1,12 +1,14 @@
+// load componet in page
 const nav = document.querySelector("header");
-fetch("./app/component/header.html")
+const footer = document.querySelector("footer");
+// load componet in page
+fetch("../component/headerPage.html")
   .then((res) => res.text())
   .then((data) => {
     nav.innerHTML = data;
   });
 
-const footer = document.querySelector("footer");
-fetch("./app/component/footer.html")
+fetch("../component/footerPage.html")
   .then((res) => res.text())
   .then((data) => {
     footer.innerHTML = data;
