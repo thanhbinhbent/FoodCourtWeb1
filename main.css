@@ -56,13 +56,15 @@ font-size: 1.8rem;
     z-index: 100;
   
 }
-#header{
+header{
+    /* width: 100%; */
     padding: 10px var(--pd-container);
     height: var(--menu-height);
     display: flex;
     justify-content:space-between;
     align-items:center;
     font-size:1.8rem;
+    background-color:#92E3A9;
 }
 .header__menu-list, .header__action{
     display: flex;
@@ -123,7 +125,7 @@ justify-content:center
 }
 
 /* Footer */
-#footer{
+footer{
     display: flex;
     justify-content: space-between;
     padding: 25px var(--pd-container);
