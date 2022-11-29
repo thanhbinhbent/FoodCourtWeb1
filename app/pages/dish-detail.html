@@ -9,6 +9,7 @@
     </title>
     <link rel="stylesheet" href="../../main.css" />
     <link rel="stylesheet" href="../style/main-page.css" />
+    <link rel="stylesheet" href="../style/dish-detail.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -23,9 +24,300 @@
       <header></header>
       <div class="container-body">
         <div id="breadcrumb">
-          <span class="breadcrumb-root">Asiana Food</span>
-          <i class="fa-solid fa-angle-right"></i>
-          <span class="breadcrumb-root">Asiana Food</span>
+          <span class="breadcrumb-root back-link">Asiana Food</span>
+          <i class="breadcrumb-icon fa-solid fa-angle-right"></i>
+          <span class="breadcrumb-root back-link">Soup</span
+          ><i class="breadcrumb-icon fa-solid fa-angle-right"></i>
+          <span class="breadcrumb-root">Special Rare Beef Noodle Soup</span>
+        </div>
+        <div class="main-page">
+          <div class="main main-row product-infor">
+            <div class="product-thumb">
+              <div class="product-thumb__main">
+                <div class="product-thumb__img--cover">
+                  <img
+                    src="../../assets/img/pho-main.png"
+                    class="product-thumb__img"
+                    alt=""
+                  />
+                </div>
+                <div class="product-thumb__rating">
+                  <div class="product-thumb__rating--value">
+                    <span>4.8</span>
+                    <p class="product__rating--stars">
+                      <i class="bx bxs-star star-item"></i>
+                      <i class="bx bxs-star star-item"></i>
+                      <i class="bx bxs-star star-item"></i>
+                      <i class="bx bxs-star star-item"></i>
+                      <i class="bx bxs-star-half star-item"></i>
+                    </p>
+                  </div>
+                  <span> | </span>
+
+                  <div class="product-thumb__rating--count">
+                    <span class="product-rating__count">6,2k</span
+                    ><span> ratings</span>
+                  </div>
+                </div>
+                <div class="product-thumb__rating"></div>
+              </div>
+              <div class="product-thumb__others">
+                <img
+                  src="../../assets/img/pho-mini1.png"
+                  alt=""
+                  class="product-thumb__img--sm img-checked"
+                />
+                <img
+                  src="../../assets/img/pho-mini2.png"
+                  alt=""
+                  class="product-thumb__img--sm"
+                />
+                <img
+                  src="../../assets/img/pho-mini3.png"
+                  alt=""
+                  class="product-thumb__img--sm"
+                />
+                <img
+                  src="../../assets/img/pho-mini4.png"
+                  alt=""
+                  class="product-thumb__img--sm"
+                />
+              </div>
+            </div>
+            <div class="product-infor__main">
+              <h2 class="product-infor__title">
+                Special Rare Beef Noodle Soup
+              </h2>
+              <div class="product-infor__prices">
+                <span class="product-infor__prices--old"> đ80.000 </span>
+                <span class="product-infor__prices--new"> đ40.000 </span>
+                <div class="product-infor__prices--percent">-50%</div>
+              </div>
+              <div class="product-infor__group">
+                <div class="product-infor__row">
+                  <label class="product-infor__col product-infor__label"
+                    >Shipping:</label
+                  >
+                  <div class="product-infor__content">
+                    <select name="option-city" id="option-city">
+                      <option value="Ho Chi Minh City" default selected>
+                        Ho Chi Minh City
+                      </option>
+                      <option value="Ho Chi Minh City">Ha Noi</option>
+                      <option value="Ho Chi Minh City">Binh Dinh</option>
+                    </select>
+                    <select name="option-ward" id="option-ward">
+                      <option value="Ho Chi Minh City" default selected>
+                        Linh Xuan
+                      </option>
+                      <option value="Ho Chi Minh City">Linh Trung</option>
+                      <option value="Ho Chi Minh City">Binh Tho</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="product-infor__row">
+                  <label class="product-infor__col product-infor__label"
+                    >Shipping Fee:</label
+                  >
+                  <div class="product-infor__content"><span>đ30.000</span></div>
+                </div>
+                <div class="product-infor__row">
+                  <label class="product-infor__col product-infor__label"
+                    >Type:</label
+                  >
+                  <div class="product-infor__content">
+                    <span class="product__type--item">Cooked Beef</span>
+                    <span class="product__type--item">Cooked Beef</span>
+                    <span class="product__type--item">Cooked Beef</span>
+                    <span class="product__type--item">Cooked Beef</span>
+                    <span class="product__type--item">Cooked Beef</span>
+                  </div>
+                </div>
+                <div class="product-infor__row">
+                  <label class="product-infor__col product-infor__label"
+                    >Quantity:</label
+                  >
+                  <div class="product-infor__content product-infor__quantity">
+                    <span class="product-infor__quantity--action">-</span>
+                    <input type="text" placeholder="1" />
+                    <span class="product-infor__quantity--action">+</span>
+                  </div>
+                </div>
+                <div class="product-infor__row product-infor__action">
+                  <button class="btn-infor btn-second product-btn__addcart">
+                    <i class="bx bx-cart-alt"></i>
+                  </button>
+                  <button class="btn-infor btn-primary product-btn__buy">
+                    Buy Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-row">
+            <div class="main-col product-infor__court">
+              <div class="product-info__follow">
+                <div class="food-court__img">
+                  <img src="/assets/img/logo-brand.png" alt="" />
+                </div>
+                <div class="food-court__infor">
+                  <h3 class="food-court__name">Pho Ly Quoc Su</h3>
+                  <span class="food-court__rating">Ratings: 4.8</span>
+                  <button class="btn-second btn-infor food-court__view">
+                    Follow
+                  </button>
+                </div>
+              </div>
+              <div class="product-infor__best-sell">
+                <h2 class="product-section__title product-best__title">
+                  <i class="bx bxs-hot product-best__icon"></i>Best selling
+                </h2>
+                <div class="product-best-container">
+                  <div class="product-best__item">
+                    <div class="product-best__img">
+                      <img src="/assets/img/food-trend1.png" alt="" />
+                    </div>
+                    <div class="product-best__infor-group">
+                      <h3 class="product-best__name">
+                        Special Rare Beef Noodle Soup...
+                      </h3>
+                      <span class="product-best__price--old">đ90.000</span>
+                      <div class="product-best__price-group">
+                        <span class="product-best__price--new">đ45.000</span>
+                        <div class="product-infor__prices--percent">-50%</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-best__item">
+                    <div class="product-best__img">
+                      <img src="/assets/img/food-trend1.png" alt="" />
+                    </div>
+                    <div class="product-best__infor-group">
+                      <h3 class="product-best__name">
+                        Special Rare Beef Noodle Soup...
+                      </h3>
+                      <span class="product-best__price--old">đ90.000</span>
+                      <div class="product-best__price-group">
+                        <span class="product-best__price--new">đ45.000</span>
+                        <div class="product-infor__prices--percent">-50%</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-best__item">
+                    <div class="product-best__img">
+                      <img src="/assets/img/food-trend1.png" alt="" />
+                    </div>
+                    <div class="product-best__infor-group">
+                      <h3 class="product-best__name">
+                        Special Rare Beef Noodle Soup...
+                      </h3>
+                      <span class="product-best__price--old">đ90.000</span>
+                      <div class="product-best__price-group">
+                        <span class="product-best__price--new">đ45.000</span>
+                        <div class="product-infor__prices--percent">-50%</div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="btn-second btn-infor btn-food__best">
+                    Load more ...
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="main-col product-infor__review">
+              <div class="product-info__review-row">
+                <h2 class="product-section__title product-best__title">
+                  <i class="bx bx-comment-detail product-review__icon"></i>Food
+                  Ratings <span class="product-infor__review--value">4.8</span>
+                </h2>
+              </div>
+              <div class="product-infor__review-row">
+                <p class="product-review_desc">How would you rate this dish?</p>
+                <div class="product-thumb__rating--value product-review--value">
+                  <span>0</span>
+                  <p class="product__rating--stars">
+                    <i class="bx bx-star star-item"></i>
+                    <i class="bx bx-star star-item"></i>
+                    <i class="bx bx-star star-item"></i>
+                    <i class="bx bx-star star-item"></i>
+                    <i class="bx bx-star star-item"></i>
+                  </p>
+                </div>
+                <div class="product-review__section">
+                  <h3 class="product-review__title">Recent ratings</h3>
+                  <div class="product-review__item">
+                    <div class="product-review__author-avatar">
+                      <img src="/assets/img/kim-avatar.jpg" alt="" />
+                    </div>
+                    <div class="product-review__content">
+                      <span class="product-review__author">Dang Thien Kim</span>
+                      <p class="product__review--stars product__rating--stars">
+                        <i class="bx bxs-star star-item"></i>
+                        <i class="bx bxs-star star-item"></i>
+                        <i class="bx bxs-star star-item"></i>
+                        <i class="bx bxs-star star-item"></i>
+                        <i class="bx bxs-star-half star-item"></i>
+                      </p>
+                      <span class="product-review__time"
+                        >12:02 - 22/11/2022</span
+                      >
+                      <p class="product-review__text">
+                        Đồ ăn ngon, giá cả hợp lý, siêu tiết kiệm
+                      </p>
+                      <div class="product-review__img"></div>
+                    </div>
+                  </div>
+                  <div class="product-review__item">
+                    <div class="product-review__author-avatar">
+                      <img src="/assets/img/kim-avatar.jpg" alt="" />
+                    </div>
+                    <div class="product-review__content">
+                      <span class="product-review__author">Dang Thien Kim</span>
+                      <p class="product__review--stars product__rating--stars">
+                        <i class="bx bxs-star star-item"></i>
+                        <i class="bx bxs-star star-item"></i>
+                        <i class="bx bxs-star star-item"></i>
+                        <i class="bx bxs-star star-item"></i>
+                        <i class="bx bxs-star-half star-item"></i>
+                      </p>
+                      <span class="product-review__time"
+                        >12:02 - 22/11/2022</span
+                      >
+                      <p class="product-review__text">
+                        Đồ ăn ngon, giá cả hợp lý, siêu tiết kiệm
+                      </p>
+                      <div class="product-review__img"></div>
+                    </div>
+                  </div>
+                  <div class="product-review__item">
+                    <div class="product-review__author-avatar">
+                      <img src="/assets/img/kim-avatar.jpg" alt="" />
+                    </div>
+                    <div class="product-review__content">
+                      <span class="product-review__author">Dang Thien Kim</span>
+                      <p class="product__review--stars product__rating--stars">
+                        <i class="bx bxs-star star-item"></i>
+                        <i class="bx bxs-star star-item"></i>
+                        <i class="bx bxs-star star-item"></i>
+                        <i class="bx bxs-star star-item"></i>
+                        <i class="bx bxs-star-half star-item"></i>
+                      </p>
+                      <span class="product-review__time"
+                        >12:02 - 22/11/2022</span
+                      >
+                      <p class="product-review__text">
+                        Đồ ăn ngon, giá cả hợp lý, siêu tiết kiệm
+                      </p>
+                      <div class="product-review__img"></div>
+                    </div>
+                  </div>
+                  <button class="btn-second btn-infor btn-food__review">
+                    Load more ...
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
