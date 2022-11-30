@@ -11,7 +11,6 @@
     margin-top: 15px;
     padding: 0px 15px 15px 15px;
     border-radius: 7px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .result-filter__txt{
     margin-top: 15px;
@@ -56,9 +55,11 @@ ol,li{
     padding: 7px 20px;
     height: 37px;
     border-radius: 20px;
+
 }
 .related-container input:nth-child(1){
     background-color: #FB8200;
+    color: #fff;
 }
 .products-container{
     margin-top: 10px;
@@ -93,6 +94,7 @@ ol,li{
     background-color: #fff;
     border-radius: 8px;
     margin-top: 5px;
+    margin-bottom: 15px;
 }
 .product-infor{
     margin: 10px;
@@ -140,4 +142,55 @@ ol,li{
 .center{
     text-align: center;
     font-size:var(--content-size-normal)
+}
+
+@media only screen and (max-width: 768px) {
+    .main-page{
+        flex-direction: column;
+    }
+    body{
+        box-sizing: border-box;
+    }
+    
+    .container-body{
+        padding: 10px;
+    }
+    .filter-container__heading{
+        display: none;
+    }
+    .products-container{
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-between;
+    }
+    .product-infor{
+        margin: 10px;
+        padding: 5px;
+        width: 140px;
+    }
+    .product-infor__img img{
+        width: 140px;
+    }
+    .product-infor-container{
+        margin-top: 5px;
+        margin-bottom: 15px;
+        margin: 5px 5px 15px 5px;
+    }
+    .product-infor__prices--old{
+        font-size: 1.5rem;
+    }
+    .product-infor__prices--new{
+        font-size: 2rem;
+    }
+    .product-infor-container:nth-child(odd){
+        margin-right: 5px;
+    }
+    .product-infor-container:nth-child(even){
+        margin-left: 5px;
+    }
+    .product__rating--stars{
+        font-size: 14px;
+    }
+    
 }
