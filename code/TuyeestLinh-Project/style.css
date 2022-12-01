@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Manrope:wght@200;300;400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,400;1,500;1,600;1,700;1,800&family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+body {
+  line-height: 1.5;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  outline: none;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+.img-logo {
+  display: flex;
+}
+.input-search input {
+  width: 300px;
+  height: 40px;
+  border-radius: 20px;
+}
+.btn-login {
+  display: flex;
+}
+.btn-login .btn {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  border-radius: 30px;
+  background-color: #fb8200;
+}
+.btn {
+  display: flex;
+}
+.btn a {
+  text-decoration: none;
+  color: aliceblue;
+}
+.navbars {
+  background-color: #92e3a9;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.wpbody {
+  background-color: #e3f7ee;
+  margin: 0px;
+}
+.text-body h1 {
+  font-family: "Righteous", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 87px;
+}
+.text-body p {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+}
+.text-body {
+  padding-top: 200px;
+  padding-left: 50px;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+.title h1 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 143%;
+  /* identical to box height, or 46px */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.018em;
+
+  color: #000000;
+}
+.list-ac {
+  padding-top: 20px;
+}
+.list-ac ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+.list-ac ul li {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+}
+.active {
+  color: #fb8200;
+  border-bottom: #fb8200 solid 2px;
+}
+.main-body {
+  margin: 0px;
+  padding: 50px;
+}
+.footer {
+  background-color: #1ac073;
+  margin: 0px;
+
+  justify-content: center;
+}
+.sub {
+  background-color: #e3f7ee;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+.icon {
+  display: flex;
+  justify-content: center;
+}
+.icon p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  /* or 111% */
+
+  letter-spacing: -0.012em;
+  color: #fff;
+}
+.logo {
+  padding: 20px;
+}
+.item-footer ul {
+  list-style: none;
+  padding-top: 10px;
+}
+.item-footer ul li {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 50px;
+  /* identical to box height, or 111% */
+
+  letter-spacing: -0.012em;
+
+  /* White */
+
+  color: #ffffff;
+}
+.icon {
+  float: left;
+}
+.title-footer {
+    background-color: #1ac073;
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height, or 125% */
+
+  letter-spacing: -0.012em;
+
+  /* White */
+
+  color: #ffffff;
+}
