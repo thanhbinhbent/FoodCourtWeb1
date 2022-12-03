@@ -137,13 +137,7 @@ margin-top:50px;
     color: var(--secondary-color);
     cursor: pointer;
 }
-.btn-second{
-    border: 1px solid var(--secondary-color);
-    font-size: 2.4rem;
-    cursor: pointer;
 
-
-}
 .product-btn__buy{background-color: var(--secondary-color);color: #fff;}
 
 /* Ratings */
@@ -376,10 +370,7 @@ padding: 17px 34px;
     height:1px;
     background-color:rgba(0, 0, 0, 0.8);
 }
-.product__review--stars{
-    margin-left: 0;
-    color: var(--secondary-color);
-}
+
 .product-review__text{
     margin-top: 17px;
 }

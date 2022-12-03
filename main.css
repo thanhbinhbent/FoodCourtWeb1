@@ -4,8 +4,8 @@
     --secondary-color:rgb(251, 130, 0);
     --color-hover:rgba(243, 186, 0,0.4);
     --background-color-light:#ffffff;
-    --pd-container:150px;
-    --heading-size-medium: 2.6rem;
+    --pd-container:100px;
+    --heading-size-mid: 2rem;
     --heading-size-lg: 7rem;
     --content-size-medium: 2.5rem;
     --content-size-normal:14px;
@@ -89,6 +89,13 @@ select{
     border-radius: 4px; 
     padding: 12px 6px;
     color: #787885;
+}
+.btn-second{
+    border: 1px solid var(--secondary-color);
+    font-size: 2.4rem;
+    cursor: pointer;
+
+
 }
 .input-label{
     position:absolute;
