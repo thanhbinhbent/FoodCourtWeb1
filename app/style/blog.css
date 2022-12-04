@@ -1,0 +1,111 @@
+body {
+    background-color: #E3F7EE;
+}
+.blog-category__title {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 28px;
+    margin: 100px 0 10px 0;
+    position: relative;
+}
+.blog-categery__item {
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    margin: 30px;
+    align-items: center;
+}
+.blog-category_main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.blog-category__item-name{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.blog-category__icon {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.blog-trending__title {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 50px;
+    margin: 10px 0 20px 0;
+    position: relative;
+}
+.blog-trending__row {
+    display: flex;
+}
+.blog-trending__column {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.blog-trending__author-avatar {
+    width:42px;
+    height:42px;
+    margin-right: 7px;
+}
+.blog-trending__author-avatar img {
+    width: 100%;
+    object-fit:cover;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.blog-trending__author {
+    font-weight: bold;
+}
+.blog-trending__author-info {
+    display: flex;
+    align-items: center;
+}
+.blog-trending__name {
+    font-size: 22px;
+    font-weight: bold;
+}
+.blog-trending__item {
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+}
+.blog-trending__img img{
+    margin: 10px;
+    border-radius: 0px !important;
+}
+.blog-trending__item-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.blog-trending__item-list {
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    margin: 10px;
+}
+.blog-trending__name {
+    margin: 10px;
+}
+.blog-trending__content {
+    margin: 10px;
+}
+button {
+    color: #FB8200;
+    border-color: #FB8200;
+    border-radius: 5px;
+    border: 1px solid #FB8200;
+    margin: 0 auto;
+    text-align: center;
+}
+.load-more {
+    text-align: center;
+    margin: 50px ;
+}
