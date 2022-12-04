@@ -49,6 +49,7 @@ hr{
 }
     .profile-left__header li{
         margin-bottom: 22px;
+        display: flex;
     }
     .profile-left__my-profile{
         margin-left: 30px;
@@ -80,12 +81,17 @@ hr{
     color: #fff;
     border-radius: 5px;
 }
+.profile-right__header div{
+    display: flex;
+    align-items: center;
+}
     /* Personal info */
 
 .personal-info-container{
     display: flex;
     justify-content: center;
 }
+
 .personal-info-container__edit{
     display: none;
     min-width: 300px;
@@ -131,6 +137,7 @@ hr{
         flex: 0;
     }
 /* info save */
+
 .personal-info-container__save{
     display: none;
 }
@@ -245,10 +252,10 @@ display: none;
         display: flex;
         justify-content: flex-end;
         font-weight: bold;
-
+        
         padding-right: 25px;
     }
-    .delivered{
+    .deliveried{
         color: var(--primary-color);
     }
     .canceled{
@@ -302,8 +309,10 @@ display: none;
         border: 1px solid var(--secondary-color);
     }
     /* order detail */
+
 .order-detail-container{
     display: none;
+    
 }
 .order-detail-container .orders-list__box{
     padding-left: 35px;
@@ -312,11 +321,13 @@ display: none;
     color: var(--primary-color);
 }
 .order-detail-container .profile-right__header i{
+
 }
 
 /* Reviews info */
+
 .my-review-container{
-    display: none;
+    /* display: none; */
 }
 .review-list{
     margin-top: 25px;
@@ -381,13 +392,17 @@ display: none;
 }
 
 @media only screen and (max-width: 768px){
+    /* profile left */
+    .profile-left{
+        display: none;
+        margin-left: 0;
+    }
     .profile-left__header{
         display: flex;
         justify-content: space-around;
     }
     .profile-left__header i{
         font-size: 4rem;
-
     }
     .profile-left__header span{
         display: none;
@@ -397,5 +412,84 @@ display: none;
     }
     .profile-left__options{
         margin-right: 25px;
+    }
+    .profile-right{
+        padding: 25px 10px;
+    }
+    /* personal edit */
+    .personal-info-container__edit{
+        margin-left: 0;
+    }
+    .personal-info--row{
+        display: block;
+        /* flex-direction: column;
+        justify-content: flex-start; */
+    }
+    .personal-info--row:not(:nth-child(1)){
+        padding-top: 0;
+    }
+    .personal-info--row:last-child{
+        text-align: center;
+    }
+    .personal-info--row div{
+        margin: 0;
+    }
+    .personal-info--row label,input{
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+
+
+    /* personal save */
+    .personal-info-container__save{
+        margin-left: 0;
+    }
+    
+    /* personal change password */
+    .change-password-container{
+        margin-left: 0;
+    }
+    .change-password__box{
+        min-width: 200px;
+        
+    }
+    /* personal address */
+    .address-shipping-container{
+        margin-left: 0;
+    }
+    /* orders */
+    .orders-history-container{
+        font-size: 1.2rem;
+        margin-left: 0;
+    }
+    .order-detail__box{
+        padding: 10px 0 10px 10px;
+    }
+    .order-detail__footer button{
+         font-size: 1.2rem;
+        padding: 5px 10px;
+        width: 90px;
+    }
+    .order-header__status{
+        margin: 0;
+        padding-right: 0;
+    }
+    /* order detail */
+    .order-detail-container{
+        font-size: 1.2rem;
+        margin-left: 0;
+    }
+    .delivering{
+        display: flex;
+    }
+    /* review */
+    .my-review-container{
+        padding: 10px;
+        margin-left: 0;
+    }
+    .review-order{
+        margin-right: 0;
+        width: 100%;
     }
 }
