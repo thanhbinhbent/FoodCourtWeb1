@@ -52,6 +52,10 @@
     color: #ffffff;
 
 }
+.header__menu-list{
+    display: none
+
+}
 
 /* Section 2 */
 .home-section__2nd{
@@ -265,4 +269,11 @@ width: 100%; object-fit: cover;}
     margin-top: 25px;
     color: #fff;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .home-page--first{
+padding: 0;
+    }
 }
