@@ -38,6 +38,7 @@ hr{
     background-color: #fff;
     color: #A6A6A6;
     font-style: italic;
+    border: 0;
 }
 .profile-left__options{
     margin-left: 25px;
@@ -50,7 +51,7 @@ hr{
         margin-bottom: 22px;
     }
     .profile-left__my-profile{
-        margin-left: 25px;
+        margin-left: 30px;
     }
 
 /* profile right */
@@ -379,3 +380,22 @@ display: none;
     border-radius: 5px;
 }
 
+@media only screen and (max-width: 768px){
+    .profile-left__header{
+        display: flex;
+        justify-content: space-around;
+    }
+    .profile-left__header i{
+        font-size: 4rem;
+
+    }
+    .profile-left__header span{
+        display: none;
+    }
+    .profile-left__header .profile-left__my-profile{
+        display: none;
+    }
+    .profile-left__options{
+        margin-right: 25px;
+    }
+}
