@@ -49,7 +49,9 @@ body {
     justify-content: space-around;
     margin: 20px;
 }
-
+.blog-trending__foodlist {
+    display: flex;
+}
 .blog-trending__author-avatar {
     width:42px;
     height:42px;
@@ -76,8 +78,9 @@ body {
     margin: 10px;
     border-radius: 5px;
     background-color: #FFFFFF;
+    height: fit-content;
 }
-.blog-trending__img img{
+.blog-trending__img {
     margin: 10px;
     border-radius: 0px !important;
 }
@@ -108,4 +111,38 @@ button {
 .load-more {
     text-align: center;
     margin: 50px ;
+}
+/* RESPONSIVE */
+/* TABLET */
+@media screen and (max-width: 980px) {
+ 
+    .blog-trending__row {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .blog-trending__foodlist {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .blog-trending__item{
+        width: 267px;
+    }
+}
+@media screen and (max-width: 480px) {
+ 
+    .blog-trending__row {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .blog-trending__foodlist {
+        display: flex;
+        justify-content: center;
+    }
+    .blog-trending__column {
+        display: flex;
+        flex-direction: column;
+    }
+    
 }
