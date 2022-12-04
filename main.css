@@ -4,11 +4,12 @@
     --secondary-color:rgb(251, 130, 0);
     --color-hover:rgba(243, 186, 0,0.4);
     --background-color-light:#ffffff;
-    --pd-container:150px;
-    --heading-size-medium: 2.6rem;
+    --pd-container:100px;
+    --heading-size-mid: 2rem;
     --heading-size-lg: 7rem;
     --content-size-medium: 2.5rem;
-    --content-size-normal:14px;
+    --content-size-normal:1.4rem;
+    --content-size-18:1.8rem;
     --menu-height:70px;
    
 }
@@ -62,13 +63,38 @@ button,input,textarea {
 	outline: none;
 	border: none;
 }
-input{
+input,textarea {
 	outline: none;
-	border: none;
+	border: 1px solid #C7C7C7;
+border-radius: 5px;
+padding: 8px 8px;
 	box-sizing: border-box;
 }
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #92E3A9;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    
+    background: var(--secondary-color);
+  }
+
+  /* custom scroll bar */
 a{
 	text-decoration: none;
+    color: #000000;
 }
 
 body,html {
@@ -83,12 +109,23 @@ input{
 }
 /* Custom Input, select */
 select{
-    outline:none; 
-    font-size:var(--content-size-normal);
-    border: 1px solid #5A5B6A;
-    border-radius: 4px; 
-    padding: 12px 6px;
-    color: #787885;
+    outline: none;
+	border: 1px solid #C7C7C7;
+border-radius: 5px;
+padding: 8px 8px;
+	box-sizing: border-box;
+    padding-right: 18px;
+    color: #C7C7C7;
+}
+.btn-second{
+    border: 1px solid var(--secondary-color);
+    font-size: 2.4rem;
+    cursor: pointer;
+
+
+}
+button,.btn{
+cursor: pointer;
 }
 .input-label{
     position:absolute;
