@@ -61,7 +61,7 @@ color: var(--primary-color);
     margin-top: 5px;
     margin-bottom: 15px;
 }
-.product-infor{
+.product-infor-container .product-infor{
     margin: 10px;
     padding: 5px;
     width: 200px;
@@ -135,6 +135,90 @@ input.category__btn, .filter-infor__price input[type="text"]{
 .menu-avatar{
     display:none
 }
+
+/* Show more voucher */
+
+.profile-voucher__container,.profile-voucher__contain{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex:1;
+}
+.profile-voucher__item{
+    margin-bottom: 17px;
+    align-items: center;
+    min-width:250px;
+    display: flex;
+    padding: 17px;
+    border-radius:8px;
+    border: 1px solid #1AC073;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+border-radius: 8px;
+background-color:#fff;
+}
+.profile-voucher__value--big{
+    box-sizing: border-box;
+    height: 60px;
+    width: 60px;
+    background-color:var(--primary-color);
+    text-align:center;
+    line-height: 6rem;
+    border-radius: 50%;
+    color: #fff;
+font-size:2rem;
+font-weight:600;
+}
+.profile-voucher__content{
+    margin-left: 17px;
+    line-height:2rem;
+}
+.profile-voucher__title{
+    color: var(--primary-color);
+}
+.profile-voucher__exp{
+    color: #666666;
+    margin: 10px 0px;
+}
+.profile-voucher__save,.profile-voucher__value{
+    padding: 5px 10px;
+    border-radius:5px;
+   display: inline-flex;
+    background-color: transparent;
+
+}
+.profile-voucher__code{
+    display: flex;
+    align-items: center;
+}
+.profile-voucher__value{
+    border: 1px solid var(--secondary-color);
+   
+    color: var(--secondary-color);
+    margin-right: 10px;
+    align-items:center;
+
+}
+
+.profile-voucher__save{
+   background-color: var(--secondary-color);
+   color: #fff;
+   align-items: center;
+  }
+  .profile-voucher__icon{
+    font-size: 2rem;
+  }
+  .profile-voucher__icon-copy{ margin-left: 10px;
+font-size: 2rem;}
+.profile-voucher__icon-save{
+    padding: 2px 5px;
+
+}
+
+ .show-more__voucher{
+        display:none;
+    }
+
+/* Show voucher */
 @media only screen and (max-width: 768px) {
     body{
         box-sizing: border-box;
@@ -163,7 +247,7 @@ input.category__btn, .filter-infor__price input[type="text"]{
             flex-wrap: wrap;
             justify-content:space-between;
         }
-        .product-infor{
+         .product-infor{
             margin: 10px;
             padding: 5px;
             width: 140px;

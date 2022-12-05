@@ -1,0 +1,321 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+body,html {
+  line-height: 1.5;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+.container-body{
+  background-color: #fff;
+  /* margin-top: var(--menu-height); */
+    padding-left: 0;
+    padding-right: 0;
+
+}
+input,
+button,
+textarea,
+select {
+  outline: none;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+.img-logo {
+  display: flex;
+}
+.input-search input {
+  width: 300px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.wpbody.row {
+  background-color: #e3f7ee;
+  margin: 0px;
+  display: flex;
+  padding-left: var(--pd-container);
+    padding-right: var(--pd-container);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    align-items: center
+}
+.wpbody.row .text-body{
+    flex: 1;
+} 
+.wpbody.row .img-body{
+    flex: 1;
+    text-align: center;
+}
+.get-your{
+    background-color: #fff;
+    padding-left: var(--pd-container);
+    padding-right: var(--pd-container);
+}
+.text-body h1 {
+  font-family: "Righteous", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 87px;
+}
+.text-body p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+}
+.text-body {
+  /* padding-top: 200px; */
+  padding-left: 50px;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  align-items: center
+}
+.discount-voucher__icon{
+    font-size:4rem;
+    margin-right: 10px;
+}
+.title h1 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 143%;
+  /* identical to box height, or 46px */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.018em;
+
+  color: #000000;
+}
+.list-ac {
+  padding-top: 20px;
+}
+.list-ac ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+.list-ac ul li {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  padding-bottom: 8px;
+}
+.active {
+  color: #fb8200;
+  border-bottom: #fb8200 solid 2px;
+}
+.main-body.row {
+  margin: 0px;
+  padding: 50px;
+  display: flex;
+  align-items: center
+}
+.main-body.row .img-body-item{
+    flex: 1;
+}
+
+.main-body .text-body-item
+{
+    flex:1;
+}
+.sub {
+  background-color: #e3f7ee;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  flex-direction: column;
+  align-items:center;
+  padding-bottom:50px;
+  padding-top: 50px;
+}
+.icon {
+  display: flex;
+  justify-content: center;
+}
+.icon p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  /* or 111% */
+
+  letter-spacing: -0.012em;
+  color: #fff;
+}
+.logo {
+  padding: 20px;
+}
+.item-footer ul {
+  list-style: none;
+  padding-top: 10px;
+}
+.item-footer ul li {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 50px;
+  /* identical to box height, or 111% */
+
+  letter-spacing: -0.012em;
+
+  /* White */
+
+  color: #ffffff;
+}
+.icon {
+  float: left;
+}
+.title-footer {
+    background-color: #1ac073;
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height, or 125% */
+
+  letter-spacing: -0.012em;
+
+  /* White */
+
+  color: #ffffff;
+}
+.sub__img-container{
+    width: 130px;
+    height: 130px;
+    background-color: #ffffff;
+    border-radius:50%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+.sub__img-container img{
+    width:100%;
+    object-fit:cover;
+}
+.sub__title{
+    font-size:3.6rem;
+    font-weight:500;
+}
+.sub__desc{
+    color: #808080;
+    font-size:var(--content-size-18)
+}
+
+.sub-input__group{
+    margin-top:30px;
+    display: flex;
+}
+.sub-input__group input{
+    border-radius: 8px;
+    border-color: transparent;
+    min-width:300px;
+}
+.btn-sub__submit{
+    background-color:var(--secondary-color);
+    color: #fff;
+    border-radius: 8px;
+    padding: 10px 25px;
+    margin-left: 20px;
+
+}
+@media only screen and (max-width: 768px) {
+    .container-body{
+        padding: 0;
+    }
+    .wpbody.row{
+        align-items: center;
+        justify-content: center;
+        padding:0;
+        height:100vh;
+        flex-direction: column-reverse;
+        padding-top: 10px;
+    padding-bottom: 10px;
+   
+    }
+    .img-body{
+        width:100%;
+        /* flex-grow: 0 !important; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+
+    }
+    .img-body img{
+        width:80%;
+    }
+
+.text-body{
+    flex: 1;
+    /* flex-grow: 0!important; */
+}
+.profile-voucher__item{
+width:100%;
+}
+.get-your{
+    padding: 10px;
+}
+.list-ac{
+    display: flex;
+}
+.main-body.row{
+flex-direction: column;
+padding: 10px;
+}
+.img-body-item{
+    width: 100%;
+}
+.img-body-item img{
+    width:80%;
+}
+.sub{
+    padding: 40px 10px;
+}
+.sub-input__group{
+    margin-left: 10px;
+    margin-right: 10px;
+    display: block;
+}
+.sub-input__group button{
+    margin-left: 0;
+    margin-top: 10px;
+}
+.sub__title,.sub__desc{
+text-align: center;
+}
+.btn.btn-sub__submit{
+    padding: 5px 10px;
+}
+.get-your .title h1,.get-your .title i{
+    font-size: 2rem;
+}
+.get-your .list-ac ul li{
+font-size: 1.6rem;
+}
+}
