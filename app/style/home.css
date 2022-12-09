@@ -1,3 +1,8 @@
+html,
+body {
+    overflow-x: hidden;
+}
+
 /* First Section */
 .home-page--first {
     background-color: var(--primary-color-overlay);
@@ -39,6 +44,7 @@
     min-width: 390px;
     border: 0;
     padding: 0 19px;
+    border-radius: 0;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     outline: none;
@@ -61,8 +67,22 @@
 
 }
 
-.header__menu-list {
-    display: none
+.page-search__input input {
+    min-width: 80%;
+    font-size: 1.6rem;
+    font-style: italic;
+}
+
+.page-search__input button {
+    font-size: 1.6rem;
+}
+
+.header__menu-list i {
+    display: none;
+}
+
+.header__menu-list .fa-solid.fa-angle-down {
+    display: inline-block;
 }
 
 /* Section 2 */
@@ -102,7 +122,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    background-position: center 100%;
     position: relative;
     display: flex;
     align-items: flex-end;
@@ -116,12 +135,23 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    background: linear-gradient(180deg, rgba(49, 187, 163, 0) 0%, rgba(14, 56, 71, 0.38) 22.92%, rgba(14, 56, 71, 0.55) 56.25%, rgba(14, 56, 71, 0.45) 100%);
+    background: linear-gradient(180deg, rgba(49, 187, 163, 0) 10%, rgba(14, 56, 71, 0.38) 80%, rgba(14, 56, 71, 0.55) 100%, rgba(14, 56, 71, 0.45) 100%);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     z-index: 1;
 }
 
+.section-heading h2 {
+    font-size: 2rem;
+}
+
+.section-heading img {
+    height: 40px;
+    object-fit: cover;
+    width: 40px;
+}
+
+/* 
 .foodcourt__item:nth-child(1) {
     background-image: url('../../assets/img/Home/item-1.jpg');
 
@@ -160,7 +190,7 @@
 .foodcourt__item:nth-child(8) {
     background-image: url('../../assets/img/Home/item-8.jpg');
 
-}
+} */
 
 .foodcourt__content {
     z-index: 1;
@@ -302,6 +332,7 @@
     flex: 1;
     padding: 18px 22px;
     border-radius: 10px;
+    font-family: roboto, arial, helvetica, sans-serif;
 }
 
 .form-feedback__input:nth-child(2) {
@@ -327,13 +358,185 @@
     cursor: pointer;
 }
 
+.header-menu__list-group {
+    display: none;
+}
+
+.foodcourt__order a {
+    color: #ffffff;
+}
+
+@media only screen and (max-width: 974px) {
+    .header__signin {
+        display: none;
+    }
+
+    .search-header {
+        display: none;
+    }
+
+    ul.header__menu-list {
+        display: none;
+    }
+
+    .header__menu-list i {
+        display: inline-block;
+    }
+
+    .header__logo {
+        display: flex;
+        align-items: center;
+
+
+    }
+
+    .header__logo img {
+        width: 190px;
+    }
+
+    .btn-menu.bx-menu {
+        font-size: 4rem;
+    }
+
+    .header-menu__list-group.active {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+    }
+
+}
+
+
+
 @media only screen and (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    .header__signin {
+        display: none;
+    }
 
     .home-page--first {
-        padding: 0;
+        box-sizing: border-box;
+        padding: 30px;
+        height: 100vh;
+        flex-direction: column-reverse;
+
+    }
+
+    .page-intro__heading {
+        max-width: 100%;
+        font-size: 6rem;
+        margin-top: 40px;
+    }
+
+    .page-intro__desc {
+        font-size: 1.8rem;
+        margin-top: 20px;
+    }
+
+    .home-page--first .page-col:first-child {
+        flex: 1;
+    }
+
+    .home-page--first .page-col:nth-child(2) {
+        margin-top: 100px;
+        text-align: center;
+    }
+
+    .page-search__input {
+        width: 80%;
+        height: 50px;
+
+    }
+
+    .page-search__input input {
+        min-width: 80%;
+        font-size: 1.6rem;
+        font-style: italic;
+    }
+
+    .page-search__input button {
+        font-size: 1.6rem;
     }
 
     .home-page--first .page-col img {
+        /* display: none; */
+        width: 80%;
+    }
+
+    /* section 2 */
+    .home-section__2nd {
+        padding: 30px;
+
+    }
+
+    .foodcourt__list {
+        justify-content: space-between;
+    }
+
+    .foodcourt__item {
+        width: 45%;
+        background-position-x: center;
+    }
+
+    .foodcourt__content {
+        padding: 5px 10px;
+    }
+
+    .form-feedback {
+        padding: 20px;
+
+        display: block;
+    }
+
+    .form-feedback__heading {
+        font-size: 5rem;
+        line-height: 100%;
+        margin-bottom: 20px;
+
+    }
+
+    .form-feedback__row {
+        width: 100%;
+        display: inline-block;
+        height: 45px;
+        min-width: 0;
+    }
+
+    .form-feedback__row input {
+        height: 45px;
+        display: block;
+        font-size: 1.6rem;
+        width: 100%;
+
+    }
+
+    .form-feedback__row input:nth-child(2) {
+        margin: 18px 0;
+    }
+
+    .form-feedback__row textarea {
+        height: 150px;
+        font-size: 1.6rem;
+        font-family: roboto, arial, helvetica, sans-serif;
+    }
+
+    .form-feedback__container {
+        width: 100%;
+    }
+
+    .intro-video__heading {
+        font-size: 8rem;
+    }
+
+    .intro-video__desc {
+        font-size: 2rem;
+    }
+
+    .form-feeadback__img {
         display: none;
     }
 }

@@ -2,18 +2,141 @@
   <a href="/"><img src="../../assets/img/logo-ngang.png" alt="" /></a>
   <ul class="header__menu-list">
     <i class="btn-menu bx bx-menu"></i>
+    <div class="header-menu__list-group">
+      <li class="menu-list__item">
+        <a href="" class="header__menu-link">
+          <span class="menu-list__text">Home</span>
+          <span></span>
+        </a>
+      </li>
+
+      <li class="menu-list__item" href="#">
+        <a href="" class="header__menu-link">
+          <span class="menu-list__text">About us</span></a
+        >
+      </li>
+      <li class="menu-list__item">
+        <a href="../app/pages/shopping-search.html" class="header__menu-link">
+          <span class="menu-list__text">All dishes</span>
+          <img
+            class="menu-list__gif"
+            src="../../assets/img/orders-now.gif"
+            alt=""
+        /></a>
+      </li>
+      <li class="menu-list__item">
+        <a href="#" class="header__menu-link last-item">
+          <span class="menu-list__text">Others</span>
+          <span><i class="fa-solid fa-angle-down"></i></span>
+        </a>
+        <ul class="menu-list__sub-container">
+          <a href="./discount.html">
+            <li class="menu-list__sub-item">Discount</li>
+          </a>
+          <a href="./blog.html">
+            <li class="menu-list__sub-item">Blog</li>
+          </a>
+          <a href="">
+            <li class="menu-list__sub-item">Policy</li>
+          </a>
+        </ul>
+      </li>
+    </div>
   </ul>
 </div>
 
-<div class="search-header">
+<form class="search-header" action="./shopping-search.html">
   <i class="search-icon bx bx-search"></i>
-  <input placeholder="Search for food" type="text" />
+  <input placeholder="Search for food" name="string-search" type="text" />
   <i class="search-icon bx bx-x"></i>
-</div>
+</form>
 <div class="header__action">
   <div class="header__cart">
-    <img src="../../assets/icon/cart.png" alt="" />
-    <span class="header__cart--num">99+</span>
+    <a href="./check-out.html">
+      <img src="../../assets/icon/cart.png" alt="" />
+      <span class="header__cart--num">99+</span>
+    </a>
+    <div class="cart-list">
+      <h3 class="cart-list__heading">Your Cart</h3>
+      <div class="cart-review__container">
+        <div class="cart-review__item">
+          <div class="cart-item__thumb">
+            <img src="../../assets/img/food-trend1.png" alt="" />
+          </div>
+          <div class="cart-item__content">
+            <h3 class="cart-item__title">Hanabi Sushi</h3>
+            <div class="cart-item__prices">
+              <span class="cart-item__prices--old">đ90.000</span>
+              <span class="cart-item__prices--new">đ40.000</span>
+            </div>
+            <div
+              class="cart-item__quantity product-infor__content product-infor__quantity"
+            >
+              <span
+                class="cart-item__quantity--reduce product-infor__quantity--action"
+                >-</span
+              >
+              <input type="text" placeholder="1" />
+              <span
+                class="cart-item__quantity--raise product-infor__quantity--action"
+                >+</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="cart-review__item">
+          <div class="cart-item__thumb">
+            <img src="../../assets/img/food-trend1.png" alt="" />
+          </div>
+          <div class="cart-item__content">
+            <h3 class="cart-item__title">Hanabi Sushi</h3>
+            <div class="cart-item__prices">
+              <span class="cart-item__prices--old">đ90.000</span>
+              <span class="cart-item__prices--new">đ40.000</span>
+            </div>
+            <div
+              class="cart-item__quantity product-infor__content product-infor__quantity"
+            >
+              <span
+                class="cart-item__quantity--reduce product-infor__quantity--action"
+                >-</span
+              >
+              <input type="text" placeholder="1" />
+              <span
+                class="cart-item__quantity--raise product-infor__quantity--action"
+                >+</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="cart-review__item">
+          <div class="cart-item__thumb">
+            <img src="../../assets/img/food-trend1.png" alt="" />
+          </div>
+          <div class="cart-item__content">
+            <h3 class="cart-item__title">Hanabi Sushi</h3>
+            <div class="cart-item__prices">
+              <span class="cart-item__prices--old">đ90.000</span>
+              <span class="cart-item__prices--new">đ40.000</span>
+            </div>
+            <div
+              class="cart-item__quantity product-infor__content product-infor__quantity"
+            >
+              <span
+                class="cart-item__quantity--reduce product-infor__quantity--action"
+                >-</span
+              >
+              <input type="text" placeholder="1" />
+              <span
+                class="cart-item__quantity--raise product-infor__quantity--action"
+                >+</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-primary cart-checkout__btn">Checkout!</button>
+    </div>
   </div>
   <div class="header__signin">
     <a href="./log-in.html" class="btn-signin btn">

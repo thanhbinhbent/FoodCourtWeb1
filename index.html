@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ASIANA FOODCOURT | ENJOY IN FOOD</title>
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
     <!-- font google start -->
     <link
       rel="stylesheet"
@@ -21,24 +22,9 @@
       href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap'"
     />
     <!-- Font google end -->
-    <link
-      rel="stylesheet"
-      href="https://cdn-uicons.flaticon.com/uicons-thin-rounded/css/uicons-thin-rounded.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    />
+
     <link rel="stylesheet" href="./reset.css" />
-    <link rel="stylesheet" href="./app/style/main-page.css" />
+    <!-- <link rel="stylesheet" href="./app/style/main-page.css" /> -->
     <link rel="stylesheet" href="./main.css" />
     <link rel="stylesheet" href="./app/style/home.css" />
   </head>
@@ -51,13 +37,17 @@
         <div class="page-col">
           <h1 class="page-intro__heading">The best food court ever !</h1>
           <p class="page-intro__desc">Driveaway your hunger pangs.</p>
-          <form class="page-search__group">
+          <form
+            action="./app/pages/shopping-search.html"
+            method="get"
+            class="page-search__group"
+          >
             <div class="page-search__input">
               <input
                 type="text"
                 class=""
                 placeholder="Search food you love..."
-                name="search"
+                name="string-search"
               />
               <button type="submit">Search</button>
             </div>
@@ -73,128 +63,7 @@
           <h2>OUR BRAND</h2>
         </div>
         <div class="foodcourt__container">
-          <ul class="foodcourt__list">
-            <li class="foodcourt__item">
-              <div class="foodcourt__content">
-                <span class="foodcourt__name">Lorem ipsum dolor</span>
-                <div class="foodcourt__time">
-                  <i></i>
-                  <span class="foodcourt__time-text"> 08:00 AM - 10:00PM </span>
-                </div>
-                <button class="foodcourt__order">
-                  <span class="foodcourt__order-text">Order Now</span>
-                  <span class="foodcourt__order-icon"
-                    ><i class="fa-solid fa-angle-right"></i
-                  ></span>
-                </button>
-              </div>
-            </li>
-            <li class="foodcourt__item">
-              <div class="foodcourt__content">
-                <span class="foodcourt__name">Lorem ipsum </span>
-                <div class="foodcourt__time">
-                  <i></i>
-                  <span class="foodcourt__time-text"> 08:00 AM - 10:00PM </span>
-                </div>
-                <button class="foodcourt__order">
-                  <span class="foodcourt__order-text">Order Now</span>
-                  <span class="foodcourt__order-icon"
-                    ><i class="fa-solid fa-angle-right"></i
-                  ></span>
-                </button>
-              </div>
-            </li>
-            <li class="foodcourt__item">
-              <div class="foodcourt__content">
-                <span class="foodcourt__name">Lorem ipsum</span>
-                <div class="foodcourt__time">
-                  <i></i>
-                  <span class="foodcourt__time-text"> 08:00 AM - 10:00PM </span>
-                </div>
-                <button class="foodcourt__order">
-                  <span class="foodcourt__order-text">Order Now</span>
-                  <span class="foodcourt__order-icon"
-                    ><i class="fa-solid fa-angle-right"></i
-                  ></span>
-                </button>
-              </div>
-            </li>
-            <li class="foodcourt__item">
-              <div class="foodcourt__content">
-                <span class="foodcourt__name">Lorem ipsum dolor </span>
-                <div class="foodcourt__time">
-                  <i></i>
-                  <span class="foodcourt__time-text"> 08:00 AM - 10:00PM </span>
-                </div>
-                <button class="foodcourt__order">
-                  <span class="foodcourt__order-text">Order Now</span>
-                  <span class="foodcourt__order-icon"
-                    ><i class="fa-solid fa-angle-right"></i
-                  ></span>
-                </button>
-              </div>
-            </li>
-            <li class="foodcourt__item">
-              <div class="foodcourt__content">
-                <span class="foodcourt__name">Lorem ipsum</span>
-                <div class="foodcourt__time">
-                  <i></i>
-                  <span class="foodcourt__time-text"> 08:00 AM - 10:00PM </span>
-                </div>
-                <button class="foodcourt__order">
-                  <span class="foodcourt__order-text">Order Now</span>
-                  <span class="foodcourt__order-icon"
-                    ><i class="fa-solid fa-angle-right"></i
-                  ></span>
-                </button>
-              </div>
-            </li>
-            <li class="foodcourt__item">
-              <div class="foodcourt__content">
-                <span class="foodcourt__name">Lorem ipsum</span>
-                <div class="foodcourt__time">
-                  <i></i>
-                  <span class="foodcourt__time-text"> 08:00 AM - 10:00PM </span>
-                </div>
-                <button class="foodcourt__order">
-                  <span class="foodcourt__order-text">Order Now</span>
-                  <span class="foodcourt__order-icon"
-                    ><i class="fa-solid fa-angle-right"></i
-                  ></span>
-                </button>
-              </div>
-            </li>
-            <li class="foodcourt__item">
-              <div class="foodcourt__content">
-                <span class="foodcourt__name">Lorem ipsum dolor</span>
-                <div class="foodcourt__time">
-                  <i></i>
-                  <span class="foodcourt__time-text"> 08:00 AM - 10:00PM </span>
-                </div>
-                <button class="foodcourt__order">
-                  <span class="foodcourt__order-text">Order Now</span>
-                  <span class="foodcourt__order-icon"
-                    ><i class="fa-solid fa-angle-right"></i
-                  ></span>
-                </button>
-              </div>
-            </li>
-            <li class="foodcourt__item">
-              <div class="foodcourt__content">
-                <span class="foodcourt__name">Lorem ipsum dolor </span>
-                <div class="foodcourt__time">
-                  <i></i>
-                  <span class="foodcourt__time-text"> 08:00 AM - 10:00PM </span>
-                </div>
-                <button class="foodcourt__order">
-                  <span class="foodcourt__order-text">Order Now</span>
-                  <span class="foodcourt__order-icon"
-                    ><i class="fa-solid fa-angle-right"></i
-                  ></span>
-                </button>
-              </div>
-            </li>
-          </ul>
+          <ul class="foodcourt__list"></ul>
         </div>
       </div>
       <div class="home-section">
@@ -252,5 +121,7 @@
       <!-- Nhúng thẻ  trên đẻ chèn footer -->
     </div>
     <script src="./app/js/getComponentIndex.js"></script>
+    <script src="./app/js/handleMenu.js"></script>
+    <script src="./app/js/loadRestaurants.js"></script>
   </body>
 </html>

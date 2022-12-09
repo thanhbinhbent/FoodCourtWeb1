@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shopping and search</title>
+    <link rel="shortcut icon" href="../../favicon.png" type="image/x-icon" />
+
     <link rel="stylesheet" href="../../reset.css" />
     <link rel="stylesheet" href="../../main.css" />
     <link rel="stylesheet" href="../style/main-page.css" />
@@ -48,7 +50,7 @@
       </header>
       <div class="container-body">
         <div class="result-filter__txt">
-          Showing results for: <span class="">All</span>
+          Showing results for: <span class="result-value"></span>
         </div>
         <div class="main-page">
           <div class="main-filter">
@@ -62,34 +64,37 @@
                 <li class="filter__heading">Category:</li>
                 <ol>
                   <li>
-                    <input type="checkbox" name="category" checked="" /><label
-                      for=""
-                      >All</label
+                    <input type="checkbox" name="category" checked="" />
+                    <span class="checkmark">All</span>
+                  </li>
+                  <li>
+                    <label class="label-container" for="">
+                      <input type="checkbox" name="category" />
+                      <span class="checkmark"></span>Hot Pot</label
                     >
                   </li>
                   <li>
-                    <input type="checkbox" name="category" /><label for=""
-                      >Hot Pot</label
+                    <label class="label-container" for="">
+                      <input type="checkbox" name="category" />
+                      <span class="checkmark"></span>Barbecue</label
                     >
                   </li>
                   <li>
-                    <input type="checkbox" name="category" /><label for=""
-                      >Barbecue</label
+                    <label class="label-container" for="">
+                      <input type="checkbox" name="category" />
+                      <span class="checkmark"></span>Vegetarian</label
                     >
                   </li>
                   <li>
-                    <input type="checkbox" name="category" /><label for=""
-                      >Vegetarian</label
+                    <label class="label-container" for=""
+                      ><input type="checkbox" name="category" />
+                      <span class="checkmark"></span>Icecream</label
                     >
                   </li>
                   <li>
-                    <input type="checkbox" name="category" /><label for=""
-                      >Icecream</label
-                    >
-                  </li>
-                  <li>
-                    <input type="checkbox" name="category" /><label for=""
-                      >Traditional</label
+                    <label class="label-container" for=""
+                      ><input type="checkbox" name="category" />
+                      <span class="checkmark"></span>Traditional</label
                     >
                   </li>
                   <li class="center">
@@ -194,355 +199,12 @@
           <div class="main-result">
             <div class="related-container">
               Related:
-              <input type="button" value="Trending" name="" id="" />
+              <input type="button" value="Trending" class="" name="" id="" />
               <input type="button" value="Recent" name="" id="" />
               <input type="button" value="Discount" name="" id="" />
               <input type="button" value="Freeship" name="" id="" />
             </div>
-            <div class="products-container">
-              <div class="product-infor-container">
-                <div class="product-infor">
-                  <div class="product-infor__img">
-                    <img
-                      src="../../assets/img/shopping-search/thmub-dish.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="product-infor__heading">Hanabi Sushi</div>
-                  <div class="product-infor__prices">
-                    <span class="product-infor__prices--old"> đ80.000 </span>
-                    <span class="product-infor__prices--new"> đ40.000 </span>
-                    <div class="product-infor__prices--percent"></div>
-                  </div>
-                  <div class="product-infor__describe">
-                    Rice topping like slices of fish, seafood, omelet
-                  </div>
-                  <div class="product-infor__rating">
-                    <div class="product-thumb__rating">
-                      <div class="product-thumb__rating--value">
-                        <span>5</span>
-                        <p class="product__rating--stars">
-                          <i class="bx bxs-star star-item"></i>
-                          <i class="bx bxs-star star-item"></i>
-                          <i class="bx bxs-star star-item"></i>
-                          <i class="bx bxs-star star-item"></i>
-                          <i class="bx bxs-star star-item"></i>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <button class="add-cart__btn">
-                      <i class="bx bx-cart"></i> Add to cart
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="product-infor-container">
-                <div class="product-infor">
-                  <div class="product-infor__img">
-                    <img
-                      src="../../assets/img/shopping-search/thmub-dish.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="product-infor__heading">Hanabi Sushi</div>
-                  <div class="product-infor__prices">
-                    <span class="product-infor__prices--old"> đ80.000 </span>
-                    <span class="product-infor__prices--new"> đ40.000 </span>
-                    <div class="product-infor__prices--percent"></div>
-                  </div>
-                  <div class="product-infor__describe">
-                    Rice topping like slices of fish, seafood, omelet
-                  </div>
-                  <div class="product-infor__rating">
-                    <div class="product-thumb__rating">
-                      <div class="product-thumb__rating--value">
-                        <span>5</span>
-                        <p class="product__rating--stars">
-                          <i class="bx bxs-star star-item"></i>
-                          <i class="bx bxs-star star-item"></i>
-                          <i class="bx bxs-star star-item"></i>
-                          <i class="bx bxs-star star-item"></i>
-                          <i class="bx bxs-star star-item"></i>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <button class="add-cart__btn">
-                      <i class="bx bx-cart"></i> Add to cart
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="product-infor-container">
-                <div class="product-infor">
-                  <div class="product-infor__img">
-                    <img
-                      src="../../assets/img/shopping-search/thmub-dish.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="product-infor__heading">Hanabi Sushi</div>
-                  <div class="product-infor__prices">
-                    <span class="product-infor__prices--old"> đ80.000 </span>
-                    <span class="product-infor__prices--new"> đ40.000 </span>
-                    <div class="product-infor__prices--percent"></div>
-                  </div>
-                  <div class="product-infor__describe">
-                    Rice topping like slices of fish, seafood, omelet
-                  </div>
-                  <div class="product-infor__rating">
-                    <div class="product-thumb__rating">
-                      <div class="product-thumb__rating--value">
-                        <span>5</span>
-                        <p class="product__rating--stars">
-                          <i class="bx bxs-star star-item"></i>
-                          <i class="bx bxs-star star-item"></i>
-                          <i class="bx bxs-star star-item"></i>
-                          <i class="bx bxs-star star-item"></i>
-                          <i class="bx bxs-star star-item"></i>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <button class="add-cart__btn">
-                      <i class="bx bx-cart"></i> Add to cart
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="product-infor-container">
-                <div class="product-infor">
-                  <div class="product-infor__img">
-                    <img
-                      src="../../assets/img/shopping-search/thmub-dish.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="product-infor__heading">Hanabi Sushi</div>
-                  <div class="product-infor__prices">
-                    <span class="product-infor__prices--old"> đ80.000 </span>
-                    <span class="product-infor__prices--new"> đ40.000 </span>
-                    <div class="product-infor__prices--percent"></div>
-                  </div>
-                  <div class="product-infor__describe">
-                    Rice topping like slices of fish, seafood, omelet
-                  </div>
-                  <div class="product-infor__rating">
-                    <div class="product-thumb__rating">
-                      <div class="product-thumb__rating--value">
-                        <span>5</span>
-                        <p class="product__rating--stars">
-                          <i class="bx bxs-star star-item"></i>
-                          <i class="bx bxs-star star-item"></i>
-                          <i class="bx bxs-star star-item"></i>
-                          <i class="bx bxs-star star-item"></i>
-                          <i class="bx bxs-star star-item"></i>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <button class="add-cart__btn">
-                      <i class="bx bx-cart"></i> Add to cart
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="product-infor-container">
-                <div class="product-infor">
-                  <div class="product-infor__img">
-                    <img
-                      src="../../assets/img/shopping-search/thmub-dish.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="product-infor__heading">Hanabi Sushi</div>
-                  <div class="product-infor__prices">
-                    <span class="product-infor__prices--old"> đ80.000 </span>
-                    <span class="product-infor__prices--new"> đ40.000 </span>
-                    <div class="product-infor__prices--percent"></div>
-                  </div>
-                  <div class="product-infor__describe">
-                    Rice topping like slices of fish, seafood, omelet
-                  </div>
-                  <div class="product-infor__rating">
-                    <div class="product-thumb__rating">
-                      <div class="product-thumb__rating--value">
-                        <span>5</span>
-                        <p class="product__rating--stars">
-                          <i class="bx bxs-star star-item"></i>
-                          <i class="bx bxs-star star-item"></i>
-                          <i class="bx bxs-star star-item"></i>
-                          <i class="bx bxs-star star-item"></i>
-                          <i class="bx bxs-star star-item"></i>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <button class="add-cart__btn">
-                      <i class="bx bx-cart"></i> Add to cart
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="product-infor-container">
-                <div class="product-infor">
-                  <div class="product-infor__img">
-                    <img
-                      src="../../assets/img/shopping-search/thmub-dish.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="product-infor__heading">Hanabi Sushi</div>
-                  <div class="product-infor__prices">
-                    <span class="product-infor__prices--old"> đ80.000 </span>
-                    <span class="product-infor__prices--new"> đ40.000 </span>
-                    <div class="product-infor__prices--percent"></div>
-                  </div>
-                  <div class="product-infor__describe">
-                    Rice topping like slices of fish, seafood, omelet
-                  </div>
-                  <div class="product-infor__rating">
-                    <div class="product-thumb__rating">
-                      <div class="product-thumb__rating--value">
-                        <span>5</span>
-                        <p class="product__rating--stars">
-                          <i class="bx bxs-star star-item"></i>
-                          <i class="bx bxs-star star-item"></i>
-                          <i class="bx bxs-star star-item"></i>
-                          <i class="bx bxs-star star-item"></i>
-                          <i class="bx bxs-star star-item"></i>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <button class="add-cart__btn">
-                      <i class="bx bx-cart"></i> Add to cart
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="product-infor-container">
-                <div class="product-infor">
-                  <div class="product-infor__img">
-                    <img
-                      src="../../assets/img/shopping-search/thmub-dish.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="product-infor__heading">Hanabi Sushi</div>
-                  <div class="product-infor__prices">
-                    <span class="product-infor__prices--old"> đ80.000 </span>
-                    <span class="product-infor__prices--new"> đ40.000 </span>
-                    <div class="product-infor__prices--percent"></div>
-                  </div>
-                  <div class="product-infor__describe">
-                    Rice topping like slices of fish, seafood, omelet
-                  </div>
-                  <div class="product-infor__rating">
-                    <div class="product-thumb__rating">
-                      <div class="product-thumb__rating--value">
-                        <span>5</span>
-                        <p class="product__rating--stars">
-                          <i class="bx bxs-star star-item"></i>
-                          <i class="bx bxs-star star-item"></i>
-                          <i class="bx bxs-star star-item"></i>
-                          <i class="bx bxs-star star-item"></i>
-                          <i class="bx bxs-star star-item"></i>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <button class="add-cart__btn">
-                      <i class="bx bx-cart"></i> Add to cart
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="product-infor-container">
-                <div class="product-infor">
-                  <div class="product-infor__img">
-                    <img
-                      src="../../assets/img/shopping-search/thmub-dish.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="product-infor__heading">Hanabi Sushi</div>
-                  <div class="product-infor__prices">
-                    <span class="product-infor__prices--old"> đ80.000 </span>
-                    <span class="product-infor__prices--new"> đ40.000 </span>
-                    <div class="product-infor__prices--percent"></div>
-                  </div>
-                  <div class="product-infor__describe">
-                    Rice topping like slices of fish, seafood, omelet
-                  </div>
-                  <div class="product-infor__rating">
-                    <div class="product-thumb__rating">
-                      <div class="product-thumb__rating--value">
-                        <span>5</span>
-                        <p class="product__rating--stars">
-                          <i class="bx bxs-star star-item"></i>
-                          <i class="bx bxs-star star-item"></i>
-                          <i class="bx bxs-star star-item"></i>
-                          <i class="bx bxs-star star-item"></i>
-                          <i class="bx bxs-star star-item"></i>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <button class="add-cart__btn">
-                      <i class="bx bx-cart"></i> Add to cart
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="product-infor-container">
-                <div class="product-infor">
-                  <div class="product-infor__img">
-                    <img
-                      src="../../assets/img/shopping-search/thmub-dish.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="product-infor__heading">Hanabi Sushi</div>
-                  <div class="product-infor__prices">
-                    <span class="product-infor__prices--old"> đ80.000 </span>
-                    <span class="product-infor__prices--new"> đ40.000 </span>
-                    <div class="product-infor__prices--percent"></div>
-                  </div>
-                  <div class="product-infor__describe">
-                    Rice topping like slices of fish, seafood, omelet
-                  </div>
-                  <div class="product-infor__rating">
-                    <div class="product-thumb__rating">
-                      <div class="product-thumb__rating--value">
-                        <span>5</span>
-                        <p class="product__rating--stars">
-                          <i class="bx bxs-star star-item"></i>
-                          <i class="bx bxs-star star-item"></i>
-                          <i class="bx bxs-star star-item"></i>
-                          <i class="bx bxs-star star-item"></i>
-                          <i class="bx bxs-star star-item"></i>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <button class="add-cart__btn">
-                      <i class="bx bx-cart"></i> Add to cart
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <div class="products-container"></div>
             <div class="load-more"></div>
           </div>
         </div>
@@ -603,6 +265,23 @@
       </footer>
     </div>
   </body>
+  <!-- Search script -->
+  <script>
+    function getUrl() {
+      const params = new URLSearchParams(window.location.search);
+      return params;
+    }
+
+    var string = getUrl().get("string-search");
+    var stringValue = document.getElementsByClassName("result-value")[0];
+    if (string == null || string == "" || string == undefined) {
+      stringValue.innerText = "All Dish";
+    } else {
+      stringValue.innerText = string;
+    }
+  </script>
   <script src="../js/getComponentGeneral.js"></script>
+  <script src="../js/handleSearchFilter.js"></script>
+  <script src="../js/loadProduct.js"></script>
   <!-- import icon lib -->
 </html>

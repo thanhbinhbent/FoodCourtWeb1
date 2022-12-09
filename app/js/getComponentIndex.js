@@ -12,3 +12,4 @@ fetch("./app/component/footer.html")
   .then((data) => {
     footerIndex.innerHTML = data;
   });
+console.log("Hello");

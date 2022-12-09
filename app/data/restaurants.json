@@ -1,0 +1,58 @@
+[
+    {
+        "id": "0001",
+        "resName": "Pho Ly Quoc Su",
+        "workTime": "08:00 AM - 10:00PM",
+        "thumb": "lyquocsu.jpg",
+        "avatar": "avatar-lyquocsu.jpg"
+    },
+    {
+        "id": "0002",
+        "resName": "Thailand Food",
+        "workTime": "08:00 AM - 10:00PM",
+        "thumb": "thailandfood.jpg",
+        "avatar": "avatar-thailandfood.jpg"
+    },
+    {
+        "id": "0003",
+        "resName": "BBQ Buffet",
+        "workTime": "08:00 AM - 10:00PM",
+        "thumb": "bbqbuffet.jpg",
+        "avatar": "avatar-bbqbuffet.jpg"
+    },
+    {
+        "id": "0004",
+        "resName": "King Hotpot",
+        "workTime": "08:00 AM - 10:00PM",
+        "thumb": "kinghotpot.jpg",
+        "avatar": "avatar-kinghotpot.jpg"
+    },
+    {
+        "id": "0005",
+        "resName": "Japan Food",
+        "workTime": "08:00 AM - 10:00PM",
+        "thumb": "japanfood.jpg",
+        "avatar": "avatar-japanfood.jpg"
+    },
+    {
+        "id": "0006",
+        "resName": "Seafood Bum",
+        "workTime": "08:00 AM - 10:00PM",
+        "thumb": "seafood.jpg",
+        "avatar": "avatar-seafood.jpg"
+    },
+    {
+        "id": "0007",
+        "resName": "Fresh Fruit",
+        "workTime": "08:00 AM - 10:00PM",
+        "thumb": "freshfruit.jpg",
+        "avatar": "avatar-freshfruit.jpg"
+    },
+    {
+        "id": "0008",
+        "resName": "Juice Drinks",
+        "workTime": "08:00 AM - 10:00PM",
+        "thumb": "juicedrink.jpg",
+        "avatar": "avatar-juicedrink.jpg"
+    }
+]
